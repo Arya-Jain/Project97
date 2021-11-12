@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Plant One for Each One</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<div class="container">
+<button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout()">Logout</button>
+	<center>
+		<h1 class="header">	
+			Plant One for Each One 	
+			
+		</h1>
+    </center>
+        <hr>
+       
+        <br>
+		<h2 class="question"> Q. What is the Date on which you are planting your tree ? </h2>
+        <input type="date" id="date" class="form-control " placeholder="please enter the Date">
+        <br>
+        <hr>
+        <br>
+        <h2 class="question"> Q. What is the name you want to give to your plant ?</h2>
+        <input type="text" id="name" class="form-control" placeholder="please enter the name of the plant">
+        <br>
+        <hr>
+        <br>
+</div><br>
+
+<center>
+<button class="btn" onclick="add_plant()">Add Your Plant</button>
+<button class="btn" onclick="next_page()">Next Page</button>
+<br>
+<br>
+
+<p class="btn-danger">PLease click on add  plant first then click on next page or your data will be lostt</p>
+</center>
+<script src="user_plant.js"></script>
+
+</body>
+</html>
